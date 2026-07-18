@@ -1,0 +1,10 @@
+.DS_Store
+output/
+
+# Original download cache retained locally but not published.
+/Archive.zip
+/Malaysia_State_Flags_Emoji_Style_128px.zip
+/Malaysia_State_Flags_Emoji_Style_128px/
+/Flags of states of Malaysia - Wikimedia Commons.html
+/Flags of states of Malaysia - Wikimedia Commons_files/
+/Flag_of_*.svg

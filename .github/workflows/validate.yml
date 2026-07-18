@@ -1,0 +1,29 @@
+name: Validate assets
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: macos-14
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Show tool versions
+        run: |
+          node --version
+          magick -version
+      - name: Rebuild generated assets and documentation
+        run: |
+          npm run build
+          npm run docs
+      - name: Validate
+        run: npm test
+      - name: Confirm generated files are current
+        run: git diff --exit-code

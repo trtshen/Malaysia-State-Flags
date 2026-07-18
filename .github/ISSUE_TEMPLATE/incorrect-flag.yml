@@ -1,0 +1,25 @@
+name: Incorrect flag
+description: Report a visual or factual problem with an existing flag.
+title: "[Flag correction]: "
+labels: ["flag correction"]
+body:
+  - type: input
+    id: flag
+    attributes:
+      label: Flag
+      placeholder: Johor
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is incorrect?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Authoritative source
+      description: Prefer an official government specification or permanent source revision.
+    validations:
+      required: true

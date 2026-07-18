@@ -1,0 +1,24 @@
+name: New authoritative source
+description: Propose a better source for an existing flag.
+title: "[Source]: "
+labels: ["provenance"]
+body:
+  - type: input
+    id: flag
+    attributes:
+      label: Flag
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source URL
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Why is this source preferable?
+      description: Include publication authority, date, and licensing details.
+    validations:
+      required: true

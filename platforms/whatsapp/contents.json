@@ -1,0 +1,132 @@
+{
+  "sticker_packs": [
+    {
+      "identifier": "malaysia_state_flags_v1",
+      "name": "Malaysia State Flags",
+      "publisher": "malaysia-state-flags contributors",
+      "tray_image_file": "tray.png",
+      "image_data_version": "1",
+      "stickers": [
+        {
+          "image_file": "stickers/johor.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Johor, Malaysia."
+        },
+        {
+          "image_file": "stickers/kedah.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Kedah, Malaysia."
+        },
+        {
+          "image_file": "stickers/kelantan.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Kelantan, Malaysia."
+        },
+        {
+          "image_file": "stickers/kuala-lumpur.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Kuala Lumpur, Malaysia."
+        },
+        {
+          "image_file": "stickers/labuan.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Labuan, Malaysia."
+        },
+        {
+          "image_file": "stickers/malacca.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Malacca, Malaysia."
+        },
+        {
+          "image_file": "stickers/negeri-sembilan.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Negeri Sembilan, Malaysia."
+        },
+        {
+          "image_file": "stickers/pahang.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Pahang, Malaysia."
+        },
+        {
+          "image_file": "stickers/penang.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Penang, Malaysia."
+        },
+        {
+          "image_file": "stickers/perak.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Perak, Malaysia."
+        },
+        {
+          "image_file": "stickers/perlis.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Perlis, Malaysia."
+        },
+        {
+          "image_file": "stickers/putrajaya.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Putrajaya, Malaysia."
+        },
+        {
+          "image_file": "stickers/sabah.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Sabah, Malaysia."
+        },
+        {
+          "image_file": "stickers/sarawak.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Sarawak, Malaysia."
+        },
+        {
+          "image_file": "stickers/selangor.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Selangor, Malaysia."
+        },
+        {
+          "image_file": "stickers/terengganu.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Flag of Terengganu, Malaysia."
+        },
+        {
+          "image_file": "stickers/federal-territories.webp",
+          "emojis": [
+            "🇲🇾"
+          ],
+          "accessibility_text": "Collective flag of the Federal Territories of Malaysia."
+        }
+      ]
+    }
+  ]
+}

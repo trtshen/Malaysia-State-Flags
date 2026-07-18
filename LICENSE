@@ -1,0 +1,17 @@
+Malaysia State Flags is a mixed-license repository.
+
+1. Project code and documentation
+
+Unless a file says otherwise, scripts, configuration, workflow files, and project documentation are Copyright (c) 2026 Malaysia State Flags contributors and are licensed under the MIT License in LICENSES/MIT.txt.
+
+2. Flag artwork
+
+The MIT License does not cover the flag SVGs or their generated PNG/WebP derivatives. Each flag retains the copyright status and license recorded in data/flags.json and ATTRIBUTION.md. Assets derived from CC BY-SA 3.0 sources remain available under CC BY-SA 3.0. Public-domain sources retain their public-domain status.
+
+3. Project-original artwork
+
+The project-original tray mark in assets/project/tray-mark.svg and any copyrightable contribution in presentations derived exclusively from public-domain sources are dedicated under CC0 1.0, in LICENSES/CC0-1.0.txt.
+
+4. Official symbols
+
+Copyright licenses do not grant trademark, official-emblem, endorsement, or other rights. See LEGAL.md.

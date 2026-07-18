@@ -1,0 +1,17 @@
+name: Licensing concern
+description: Report missing, conflicting, or potentially incorrect rights information.
+title: "[License]: "
+labels: ["licensing"]
+body:
+  - type: input
+    id: asset
+    attributes:
+      label: Affected asset
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern and supporting evidence
+    validations:
+      required: true

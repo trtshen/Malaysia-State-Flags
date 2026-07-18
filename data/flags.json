@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "collection": {
+    "id": "malaysia-state-flags",
+    "name": "Malaysia State Flags",
+    "version": "1.0.0",
+    "description": "Community-maintained vector and social icon representations of the flags of Malaysia's states and federal territories."
+  },
+  "assetTemplates": {
+    "faithfulPng": "assets/png/faithful/{size}/{id}.png",
+    "roundedPng": "assets/png/rounded/{size}/{id}.png",
+    "whatsapp": "platforms/whatsapp/stickers/{id}.webp"
+  },
+  "sizes": [32, 64, 128, 256, 512],
+  "flags": [
+    {
+      "id": "johor",
+      "name": "Johor",
+      "nameMs": "Johor",
+      "type": "state",
+      "alt": "Flag of Johor, Malaysia.",
+      "assets": { "svg": "assets/svg/johor.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Johor.svg&oldid=1059188097",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Flag_of_Johor.svg",
+        "authors": ["Mrmw", "Mike Rohsopht"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain (simple geometry)", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Johor.svg#Licensing" },
+        "sha256": "3ee8b8227ef424eb1f814caec5d8084fa0febf87f0c650ed41dcee5f5e4b6861",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only.",
+        "verifiedAgainst": "https://www.mdkt.gov.my/sites/default/files/pekeliling-am-johor-bilangan-2-2018_1_compressed.pdf#page=21"
+      }
+    },
+    {
+      "id": "kedah",
+      "name": "Kedah",
+      "nameMs": "Kedah",
+      "type": "state",
+      "alt": "Flag of Kedah, Malaysia.",
+      "assets": { "svg": "assets/svg/kedah.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Kedah.svg&oldid=1078617481",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Flag_of_Kedah.svg",
+        "authors": ["Bukhrin", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kedah.svg#Licensing" },
+        "sha256": "1e5850901cdbf86903a7b3812cfef9b90d4c13bbc414bde08f7e34fa25d42f0a",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "kelantan",
+      "name": "Kelantan",
+      "nameMs": "Kelantan",
+      "type": "state",
+      "alt": "Flag of Kelantan, Malaysia.",
+      "assets": { "svg": "assets/svg/kelantan.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Kelantan.svg&oldid=1164953759",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/archive/6/61/20230812175705%21Flag_of_Kelantan.svg",
+        "authors": ["Mysid", "Foxelbeton"],
+        "license": { "id": "CC-BY-SA-3.0", "name": "Creative Commons Attribution-ShareAlike 3.0 Unported", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
+        "attribution": "Mysid; re-vectorized by Foxelbeton.",
+        "sha256": "92674119d1bee2446eb0fc0b554e2b63aaababf072c79276ea852230ea40a64f",
+        "modificationStatus": "Uses the clearly licensed 12 August 2023 upstream revision; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "kuala-lumpur",
+      "name": "Kuala Lumpur",
+      "nameMs": "Kuala Lumpur",
+      "type": "federal-territory",
+      "alt": "Flag of Kuala Lumpur, Malaysia.",
+      "assets": { "svg": "assets/svg/kuala-lumpur.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Kuala_Lumpur,_Malaysia.svg&oldid=1024193587",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Flag_of_Kuala_Lumpur%2C_Malaysia.svg",
+        "authors": ["Zscout370 (assumed by Wikimedia Commons)"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Kuala_Lumpur,_Malaysia.svg#Licensing" },
+        "sha256": "327cac4ed7e7ad06f7792e4674e2cc986ca3e325a0956895d9be4bd4e8a30ebb",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "labuan",
+      "name": "Labuan",
+      "nameMs": "Labuan",
+      "type": "federal-territory",
+      "alt": "Flag of Labuan, Malaysia.",
+      "assets": { "svg": "assets/svg/labuan.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Labuan.svg&oldid=1041300514",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/6/69/Flag_of_Labuan.svg",
+        "authors": ["Stefan Fussan", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Labuan.svg#Licensing" },
+        "sha256": "80ee0c9046b6e2dbad80ae1971bb3c2f025f24acfa0a0f37527f00994c229618",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "malacca",
+      "name": "Malacca",
+      "nameMs": "Melaka",
+      "type": "state",
+      "alt": "Flag of Malacca, Malaysia.",
+      "assets": { "svg": "assets/svg/malacca.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Malacca.svg&oldid=1192494485",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_Malacca.svg",
+        "authors": ["Mysid", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Malacca.svg#Licensing" },
+        "sha256": "6f71b8256181baad38da80eed26ec93037d254c835291b684110cdc9191cb697",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "negeri-sembilan",
+      "name": "Negeri Sembilan",
+      "nameMs": "Negeri Sembilan",
+      "type": "state",
+      "alt": "Flag of Negeri Sembilan, Malaysia.",
+      "assets": { "svg": "assets/svg/negeri-sembilan.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Negeri_Sembilan.svg&oldid=909789442",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/d/db/Flag_of_Negeri_Sembilan.svg",
+        "authors": ["Himasaram"],
+        "license": { "id": "LicenseRef-Public-Domain-Malaysia", "name": "Public domain in Malaysia", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Negeri_Sembilan.svg#Licensing" },
+        "sha256": "d3924349ad3da7f89ddd5107b128c87fbfd798e5895b5ab406a8e418c8876115",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "pahang",
+      "name": "Pahang",
+      "nameMs": "Pahang",
+      "type": "state",
+      "alt": "Flag of Pahang, Malaysia.",
+      "assets": { "svg": "assets/svg/pahang.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Pahang.svg&oldid=1072627366",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Pahang.svg",
+        "authors": ["Urmas (assumed by Wikimedia Commons)"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Pahang.svg#Licensing" },
+        "sha256": "1a2e087c696afcc7430304177e7334dee0a0cb96fe7fae3fdd165d01e9c368fd",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "penang",
+      "name": "Penang",
+      "nameMs": "Pulau Pinang",
+      "type": "state",
+      "alt": "Flag of Penang, Malaysia.",
+      "assets": { "svg": "assets/svg/penang.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Penang_(Malaysia).svg&oldid=1214980584",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Penang_%28Malaysia%29.svg",
+        "authors": ["Original flag designer unknown", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain-Malaysia", "name": "Public domain in Malaysia", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Penang_(Malaysia).svg#Licensing" },
+        "sha256": "cfc703efab434505c81497e3d849b9198551e2efbe93ede877b9fe515f292734",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "perak",
+      "name": "Perak",
+      "nameMs": "Perak",
+      "type": "state",
+      "alt": "Flag of Perak, Malaysia.",
+      "assets": { "svg": "assets/svg/perak.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Perak.svg&oldid=1224354598",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Flag_of_Perak.svg",
+        "authors": ["Urmas (assumed by Wikimedia Commons)", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain (simple geometry)", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Perak.svg#Licensing" },
+        "sha256": "4dcb205b640da597d3390d83731e1337049018d2dc434c2e68f4407f0c249cb6",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "perlis",
+      "name": "Perlis",
+      "nameMs": "Perlis",
+      "type": "state",
+      "alt": "Flag of Perlis, Malaysia.",
+      "assets": { "svg": "assets/svg/perlis.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Perlis.svg&oldid=913751575",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Perlis.svg",
+        "authors": ["Urmas (assumed by Wikimedia Commons)", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Perlis.svg#Licensing" },
+        "sha256": "ebff0c5662eacd8df8939f322b6c38d14f0fed643984328bd091ba9f731f09a5",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "putrajaya",
+      "name": "Putrajaya",
+      "nameMs": "Putrajaya",
+      "type": "federal-territory",
+      "alt": "Flag of Putrajaya, Malaysia.",
+      "assets": { "svg": "assets/svg/putrajaya.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Putrajaya.svg&oldid=822094185",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Flag_of_Putrajaya.svg",
+        "authors": ["Bearsmalaysia", "Ranking Update", "SiBr4", "NikNaks"],
+        "license": { "id": "LicenseRef-Public-Domain-Malaysia", "name": "Public domain in Malaysia", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Putrajaya.svg#Licensing" },
+        "sha256": "a9562ab0fe9b53c6ed5364afffba0351488b8f000c140fd0cd5a52ea197eac2e",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "sabah",
+      "name": "Sabah",
+      "nameMs": "Sabah",
+      "type": "state",
+      "alt": "Flag of Sabah, Malaysia.",
+      "assets": { "svg": "assets/svg/sabah.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Sabah.svg&oldid=1211940562",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_of_Sabah.svg",
+        "authors": ["Mysid", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain", "name": "Public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_Sabah.svg#Licensing" },
+        "sha256": "d933b0c501662d95ab45588a5f79aaaee28f012c2b23249646314195a41aed0e",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "sarawak",
+      "name": "Sarawak",
+      "nameMs": "Sarawak",
+      "type": "state",
+      "alt": "Flag of Sarawak, Malaysia.",
+      "assets": { "svg": "assets/svg/sarawak.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Sarawak.svg&oldid=943977902",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Flag_of_Sarawak.svg",
+        "authors": ["Matthew A. Lockhart", "Wikimedia Commons contributors"],
+        "license": { "id": "CC-BY-SA-3.0", "name": "Creative Commons Attribution-ShareAlike 3.0 Unported", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
+        "attribution": "Matthew A. Lockhart.",
+        "sha256": "870d3eaad5cf1a95e54529335416efb42a227c3e2d610c1bde8943e32b46bd2f",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "selangor",
+      "name": "Selangor",
+      "nameMs": "Selangor",
+      "type": "state",
+      "alt": "Flag of Selangor, Malaysia.",
+      "assets": { "svg": "assets/svg/selangor.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Selangor.svg&oldid=1228449361",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/archive/0/0c/20260320144012%21Flag_of_Selangor.svg",
+        "authors": ["Mysid", "Foxelbeton"],
+        "license": { "id": "CC-BY-SA-3.0", "name": "Creative Commons Attribution-ShareAlike 3.0 Unported", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
+        "attribution": "Mysid; code revision by Foxelbeton.",
+        "sha256": "4990b0c8eb64bc726ef5b9646318a9bac2c399f17c85cb7cf3e80ceb43549a95",
+        "modificationStatus": "Source SVG matches the 24 July 2023 upstream revision; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "terengganu",
+      "name": "Terengganu",
+      "nameMs": "Terengganu",
+      "type": "state",
+      "alt": "Flag of Terengganu, Malaysia.",
+      "assets": { "svg": "assets/svg/terengganu.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_Terengganu.svg&oldid=1185033248",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/archive/6/6b/20260321080936%21Flag_of_Terengganu.svg",
+        "authors": ["Mysid", "Foxelbeton"],
+        "license": { "id": "CC-BY-SA-3.0", "name": "Creative Commons Attribution-ShareAlike 3.0 Unported", "url": "https://creativecommons.org/licenses/by-sa/3.0/" },
+        "attribution": "Mysid; code revision by Foxelbeton.",
+        "sha256": "87d87e0d6ea19436a6c4f29978434d09121e54337d0121255df47d1a609b6f78",
+        "modificationStatus": "Source SVG matches the 22 July 2023 upstream revision; generated icons change format and presentation only."
+      }
+    },
+    {
+      "id": "federal-territories",
+      "name": "Federal Territories",
+      "nameMs": "Wilayah Persekutuan Malaysia",
+      "type": "federal-territories-collective",
+      "alt": "Collective flag of the Federal Territories of Malaysia.",
+      "assets": { "svg": "assets/svg/federal-territories.svg" },
+      "source": {
+        "descriptionUrl": "https://commons.wikimedia.org/w/index.php?title=File:Flag_of_the_Federal_Territories_of_Malaysia.svg&oldid=1077097759",
+        "revisionUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_the_Federal_Territories_of_Malaysia.svg",
+        "authors": ["Syed", "Wikimedia Commons contributors"],
+        "license": { "id": "LicenseRef-Public-Domain-Malaysia", "name": "Public domain in Malaysia and public domain dedication", "url": "https://commons.wikimedia.org/wiki/File:Flag_of_the_Federal_Territories_of_Malaysia.svg#Licensing" },
+        "sha256": "f0f657df1f990c234480a1962221b5de4a457999c86ef27ced72e3d0809c26bd",
+        "modificationStatus": "Source SVG is an unmodified upstream file; generated icons change format and presentation only."
+      }
+    }
+  ]
+}
