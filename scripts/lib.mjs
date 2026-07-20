@@ -40,6 +40,32 @@ export function sha256(path) {
   return createHash("sha256").update(readFileSync(path)).digest("hex");
 }
 
+export function validateSourceSvg(flag) {
+  const errors = [];
+  const check = (condition, message) => { if (!condition) errors.push(`${flag.id}: ${message}`); };
+  const svgPath = fromRoot(flag.assets.svg);
+
+  check(existsSync(svgPath), `missing ${flag.assets.svg}.`);
+  if (!existsSync(svgPath)) return errors;
+
+  check(sha256(svgPath) === flag.source.sha256, "SVG SHA-256 does not match the manifest.");
+  const svg = readFileSync(svgPath, "utf8");
+  check(!/<script\b/i.test(svg), "scripts are forbidden in SVG.");
+  check(!/<foreignObject\b/i.test(svg), "foreignObject is forbidden in SVG.");
+  check(!/<!DOCTYPE|<!ENTITY/i.test(svg), "doctypes and entities are forbidden in SVG.");
+  check(!/<image\b/i.test(svg), "embedded raster images are forbidden in SVG.");
+  check(!/\son[a-z]+\s*=/i.test(svg), "event handlers are forbidden in SVG.");
+  check(!/(?:href|xlink:href)\s*=\s*["'](?!#)/i.test(svg), "external SVG references are forbidden.");
+  check(!/url\(\s*["']?(?:https?:|\/\/|data:)/i.test(svg), "external CSS resources are forbidden.");
+  check(!/all rights reserved/i.test(svg), "conflicting All Rights Reserved notice found.");
+  const rootTag = svg.match(/<svg\b([^>]*)>/i)?.[1] ?? "";
+  const width = Number.parseFloat(rootTag.match(/\bwidth\s*=\s*["']([^"']+)/i)?.[1]);
+  const height = Number.parseFloat(rootTag.match(/\bheight\s*=\s*["']([^"']+)/i)?.[1]);
+  check(Number.isFinite(width) && Number.isFinite(height) && Math.abs(width / height - 2) < 0.001, "SVG dimensions must have a 2:1 ratio.");
+
+  return errors;
+}
+
 export function listFiles(directory) {
   if (!existsSync(directory)) return [];
   const files = [];
