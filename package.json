@@ -10,10 +10,11 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "docs": "node scripts/docs.mjs",
+    "site": "node scripts/site.mjs",
     "release": "node scripts/release.mjs",
     "qa": "node scripts/qa.mjs",
     "validate": "node scripts/validate.mjs",
-    "test": "npm run validate"
+    "test": "npm run validate && npm run site"
   },
   "license": "MIT"
 }

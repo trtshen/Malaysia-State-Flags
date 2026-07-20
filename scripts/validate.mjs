@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { extname } from "node:path";
 import {
   ensureTooling, fileSize, fromRoot, listFiles, loadManifest, relativePath,
-  renderAttribution, renderGallery, replaceTemplate, run, sha256
+  renderAttribution, renderGallery, replaceTemplate, run, validateSourceSvg
 } from "./lib.mjs";
 
 const errors = [];
@@ -27,23 +27,7 @@ for (const flag of manifest.flags) {
   check(Boolean(flag.source.license?.id && flag.source.license?.name && flag.source.license?.url), `${flag.id}: source license metadata is incomplete.`);
   check(Boolean(flag.source.modificationStatus), `${flag.id}: modification status is required.`);
 
-  const svgPath = fromRoot(flag.assets.svg);
-  check(existsSync(svgPath), `${flag.id}: missing ${flag.assets.svg}.`);
-  if (!existsSync(svgPath)) continue;
-  check(sha256(svgPath) === flag.source.sha256, `${flag.id}: SVG SHA-256 does not match the manifest.`);
-  const svg = readFileSync(svgPath, "utf8");
-  check(!/<script\b/i.test(svg), `${flag.id}: scripts are forbidden in SVG.`);
-  check(!/<foreignObject\b/i.test(svg), `${flag.id}: foreignObject is forbidden in SVG.`);
-  check(!/<!DOCTYPE|<!ENTITY/i.test(svg), `${flag.id}: doctypes and entities are forbidden in SVG.`);
-  check(!/<image\b/i.test(svg), `${flag.id}: embedded raster images are forbidden in SVG.`);
-  check(!/\son[a-z]+\s*=/i.test(svg), `${flag.id}: event handlers are forbidden in SVG.`);
-  check(!/(?:href|xlink:href)\s*=\s*["'](?!#)/i.test(svg), `${flag.id}: external SVG references are forbidden.`);
-  check(!/url\(\s*["']?(?:https?:|\/\/|data:)/i.test(svg), `${flag.id}: external CSS resources are forbidden.`);
-  check(!/all rights reserved/i.test(svg), `${flag.id}: conflicting All Rights Reserved notice found.`);
-  const rootTag = svg.match(/<svg\b([^>]*)>/i)?.[1] ?? "";
-  const width = Number.parseFloat(rootTag.match(/\bwidth\s*=\s*["']([^"']+)/i)?.[1]);
-  const height = Number.parseFloat(rootTag.match(/\bheight\s*=\s*["']([^"']+)/i)?.[1]);
-  check(Number.isFinite(width) && Number.isFinite(height) && Math.abs(width / height - 2) < 0.001, `${flag.id}: SVG dimensions must have a 2:1 ratio.`);
+  errors.push(...validateSourceSvg(flag));
 }
 
 const identify = (path) => run("magick", ["identify", "-format", "%w|%h|%[channels]|%[opaque]", path], { capture: true }).split("|");

@@ -2,6 +2,8 @@
 
 Download-ready SVG flags and social-sized icons for Malaysia's 13 states, three federal territories, and the collective Federal Territories flag. This is an unofficial, community-maintained collection designed for easy reuse in websites, applications, artwork, and compatible sticker workflows.
 
+**[Browse and download the collection on GitHub Pages](https://trtshen.github.io/Malaysia-State-Flags/)**
+
 ## Flags
 
 Click a flag for its SVG source, or use the PNG and WebP links below it.
@@ -45,6 +47,10 @@ Download a complete set from the latest release: [SVG sources](../../releases/la
 - `scripts/` — dependency-free build, validation, documentation, QA, and release tools.
 
 To rebuild locally, install Node.js 20+ and ImageMagick 7, then run `npm run build`, `npm run docs`, and `npm test`. Builds do not download remote assets.
+
+To generate the static GitHub Pages catalogue, run `npm run site` and serve `output/site/` with any local static server. The site is generated from `data/flags.json`, uses relative asset paths, and has no runtime dependencies. The generator verifies source SVG checksums, rejects active or externally loaded SVG content, and validates all staged links before publishing. Publishing is handled by `.github/workflows/pages.yml`; GitHub Pages is configured to use GitHub Actions with HTTPS.
+
+The deployment workflow installs no packages and uses only GitHub-owned actions pinned to immutable commit SHAs. `main` requires a pull request and the passing `validate` check; the `github-pages` environment accepts only protected branches. This keeps the repository practical for a solo maintainer without requiring a second reviewer.
 
 ## License and attribution
 
